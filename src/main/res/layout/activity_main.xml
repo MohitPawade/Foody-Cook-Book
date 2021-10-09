@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Image -Name-Category -Instructions-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/receipe_image"
+                android:layout_height="250dp"
+                android:layout_width="250dp"
+                android:layout_margin="8dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/bookmark_receipe"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="180dp"
+                android:paddingLeft="2dp"
+                android:src="@drawable/favourite_size1_border_foreground"
+                android:layout_toRightOf="@+id/receipe_image"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/receipe_name"
+                android:layout_below="@+id/receipe_image"
+                android:textColor="#F9F3DF"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/receipe_category"
+                android:layout_below="@+id/receipe_name"
+                android:textColor="#CDF2CA"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/receipe_instructions"
+                android:layout_below="@+id/receipe_category"
+                android:textSize="18dp"
+                android:textColor="#FFDEFA" />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
